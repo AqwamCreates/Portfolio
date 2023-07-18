@@ -1,0 +1,61 @@
+h1 {
+	
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+h2 {
+	
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+h3 {
+	
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+table, th, td {
+	
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  padding: 10px
+  
+}
+
+table.center {
+	
+	margin-left: auto; 
+	margin-right: auto; 
+	
+}
+
+div.column {
+	
+	float: left;
+	width: 33.33%;
+	
+}
+
+div.reset {
+	
+	float: middle;
+	width: 100%;
+	
+}
+
+div.row:after {
+	
+	content: “”;
+	display: table;
+	clear: both;
+
+}
+
+ul li { 
+
+	padding: 3px 0px; 
+
+}

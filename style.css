@@ -68,7 +68,7 @@ ul li {
 }
 
 /* The side navigation menu */
-.sidebar {
+div.sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -82,7 +82,7 @@ ul li {
 }
 
 /* The navigation menu links */
-.sidebar a {
+div.sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
@@ -92,12 +92,12 @@ ul li {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
+div.sidebar a:hover {
   color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
-.sidebar .closebutton {
+div.sidebar .closebutton {
   position: absolute;
   top: 0;
   right: 25px;
@@ -107,6 +107,16 @@ ul li {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  div.sidebar {padding-top: 15px;}
+  div.sidebar a {font-size: 18px;}
+}
+
+object.sidebar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	
 }

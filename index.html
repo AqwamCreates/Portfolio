@@ -7,39 +7,25 @@
 
 <link rel="stylesheet" href="style.css">
 
-<script>
-
-document.addEventListener("visibilitychange", function() {
-
-      if (document.hidden) {
-	  
-		document.title = "(⌐■_■)";
-		
-		setTimeout(function() {
-			document.title = "( •_•)>⌐■-■";
-        }, 500);
-		
-		setTimeout(function() {
-			document.title = "Aqwam's Portfolio";
-        }, 1000);
-		
-      } else {
-	  
-        document.title = "( •_•)>⌐■-■";
-		
-		setTimeout(function() {
-			document.title = "(⌐■_■)";
-        }, 500); // 1000 milliseconds = 1 second
-		
-      }
-	  
-});
-  
-</script>
+<script src="script.js"></script>
 
 </head>
 
 <body>
+
+<div id="sidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebutton" onclick="closeSideBar()">&times;</a>
+  <img src="portrait.jpg" style="width:200px;height:200px; padding-bottom:20px;" class="center">
+  <h3 style="color:#FFFFFF;">Aqwam Harish (Bin) Aiman</h3>
+  <a href="index.html">About</a>
+  <a href="work_experience.html">Work Experience</a>
+  <a href="#">Personal Projects</a>
+  <a href="#">Certificates</a>
+  <a href="#">Skills</a>
+  <a href="#">Contact</a>
+</div>
+
+<span onclick="openSidebar()">open</span>
 
 <h1>Welcome To Aqwam's Portfolio Website</h1>
 

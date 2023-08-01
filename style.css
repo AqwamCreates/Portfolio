@@ -119,3 +119,13 @@ object.sidebar {
 	width: 20%;
 	z-index: 1;
 }
+
+a.hidden_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Define your preferred link color when not hovered */
+a.hidden_link:hover {
+  color: inherit; /* Replace with your preferred color */
+}
